@@ -48,7 +48,7 @@ body{
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     background: black;
-    color: #00ff00;
+    color: #44da30;
     padding: 10px;
     text-align: center;
 }
@@ -64,13 +64,13 @@ form{
 }
 INPUT[type="email"]
 {
-    background-color: #00ff00;
+    background-color: #44da30;
     color: black;
     border: none;
 }
 INPUT[type="submit"]
 {
-    background-color: #00ff00;
+    background-color: #44da30;
     color: black;
     border: none;
 }
