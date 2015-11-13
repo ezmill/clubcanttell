@@ -2,7 +2,11 @@ var audioAmt = 3;
 var sources = [
 	"audio/03 My Way.mp3",
 	"audio/03 What More Can I Say.mp3",
-	"audio/04 Last Caress.mp3"
+	"audio/04 Last Caress.mp3",
+	"audio/08 Piss On Your Grave (feat. Kanye West).mp3",
+	"audio/11 Big Take Over.mp3",
+	"audio/Judgemental Cunt.mp3",
+	"audio/Young Thug - Hercules.mp3"
 ]
 var tracks = [];
 for(var i = 0; i < sources.length; i++){
@@ -13,7 +17,7 @@ for(var i = 0; i < sources.length; i++){
 
 var index = Math.floor(Math.random()*tracks.length);
 playTrack(index);
-window.addEventListener("click", switchTrack);
+document.getElementById("button").addEventListener("click", switchTrack);
 
 function playTrack(index){
 	tracks[index].play();
