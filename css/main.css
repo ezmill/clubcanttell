@@ -1,6 +1,13 @@
 *{
 	box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Containment';
+    src: url('../fonts/containment-solid.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
 	box-sizing: border-box;
 	/*background: #000000;*/
@@ -11,6 +18,10 @@ body{
     -moz-background-size: 75%;
     -o-background-size: 75%;
     background-size: 75%;
+    font-family: "Containment";
+    color: white;
+    /*letter-spacing: 3px;*/
+    /*font-size: 24px;*/
 }
 #button{
 	position: absolute;
@@ -26,4 +37,43 @@ body{
     background: url(../img/smiley.svg) center;
     background-size: 100%;
 	cursor: pointer;
+}
+#mc_embed_signup{
+    position: absolute;
+    top: calc(60% + 200px);
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: black;
+    color: #00ff00;
+    padding: 10px;
+    text-align: center;
+}
+h2{
+	margin: 0;
+}
+form{
+	margin: 0;
+}
+.mc-field-group{
+	
+	margin: 10px 0;
+}
+INPUT[type="email"]
+{
+    background-color: #00ff00;
+    color: black;
+    border: none;
+}
+INPUT[type="submit"]
+{
+    background-color: #00ff00;
+    color: black;
+    border: none;
+}
+.clear{
+	text-align: center;
 }
