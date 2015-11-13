@@ -17,11 +17,12 @@ for(var i = 0; i < sources.length; i++){
 	tracks[i].src = sources[i];
 	tracks[i].load();
 }
-
+var hasntSwitched = true;
 var index = sources.length - 1;
 if(!isMobile){
 	playTrack(index);
 }
+
 document.getElementById("button").addEventListener("click", switchTrack);
 
 function playTrack(index){
@@ -35,11 +36,23 @@ function pauseTrack(index){
 function switchTrack(e){
 	if(index == tracks.length - 1){
 		pauseTrack(index);
-		index = 0;
-		playTrack(index);
+		if(isMobile && hasntSwitched){
+			playTrack(index);
+			index = 0;
+			hasntSwitched = false;
+		} else {
+			index = 0;
+			playTrack(index);
+		}
 	} else {
 		pauseTrack(index);
-		index++;
-		playTrack(index);
+		if(isMobile && hasntSwitched){
+			playTrack(index);
+			index++;
+			hasntSwitched = false;
+		} else {
+			index++;
+			playTrack(index);
+		}
 	}
 }
