@@ -15,7 +15,7 @@ for(var i = 0; i < sources.length; i++){
 	tracks[i].load();
 }
 
-var index = 4;
+var index = sources.length - 1;
 playTrack(index);
 document.getElementById("button").addEventListener("click", switchTrack);
 
