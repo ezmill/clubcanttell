@@ -9,7 +9,6 @@ var sources = [
 	"audio/11 Big Take Over.mp3",
 	"audio/Judgemental Cunt.mp3",
 	"audio/03 What More Can I Say.mp3",
-	"audio/Young Thug - Hercules.mp3",
 	"audio/03 My Way.mp3"
 ]
 var tracks = [];
